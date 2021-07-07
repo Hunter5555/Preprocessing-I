@@ -21,7 +21,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family: 'Montserrat', sans-serif;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	max-width:80%;
 }
 ol, ul {
 	list-style: none;
@@ -49,11 +50,71 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
+	.colorred{
+		color:red;
+	}
+	html, body {
+		height: 100%;
+		margin: auto;
+		max-width: 80%;
+		background-size: 100%;
+	}
+	h1{
+		font-size:2.5rem;
+		color: gainsboro
 
-html, body {
-    height: 100%;
+	}
+	h2{
+		font-size:2rem;
+		color: gainsboro
+	}
+	h4{
+		font-size:1.6rem;
+		color: gainsboro;
+		padding: 10px;
+	}
+	nav{
+		display:flex;
+		justify-content: space-evenly;
+		background-color: black;
+		a{
+		color: white;
+		text-decoration: none;
+		&:hover{ color: mediumseagreen;	}
+		}}
+	.headline{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		flex-direction: column;
+		padding:20px;
+		.name{
+			font-size: 3rem
+		.colorred();
+		@media (max-width: 500px){
+		font-size: 2rem;
+		color:black;}
+	}}
+	.contact{
+		font-size: .6rem;
+		padding: 20px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		.contactH{
+			font-size: 1.6rem;
+			.colorred();
+		}
+	}
+	.main-content{
+			display:flex;
+			padding: 10%;
+			justify-content: space-evenly;
+			flex-direction: column;
+		@media (max-width: 500px){
+			align-items: center;
+			justify-content: center;
+		}
 }
-
